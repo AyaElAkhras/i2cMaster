@@ -15,7 +15,7 @@
 
 `timescale 1ns/1ns
 
-module AU(clk, reset_n, abit, load_en, AddrIn, detect_pos, iSCL, oSDA);      // hwa address is sent with MSB wla LSB 1st ?????     Will u need the AddrIn wla momkin a shift hwa ????
+module AU(clk, reset_n, abit, load_en, AddrIn, detect_pos, iSCL, oSDA);     
     input clk;
     input reset_n;
     input abit;
@@ -23,7 +23,6 @@ module AU(clk, reset_n, abit, load_en, AddrIn, detect_pos, iSCL, oSDA);      // 
     input [7:0] AddrIn;
     input detect_pos;
   
-    // newly added kda enough to fit enaha t enable el shifters ?????
     input iSCL;
     
     output  oSDA;  // bits serially outputted
